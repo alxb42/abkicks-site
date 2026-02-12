@@ -24,7 +24,7 @@ const products = [
         condition: "New/Sealed",
         salePrice: 39.99,
         icon: "🤡",
-        image: "images/products/product-3.jpg"
+        image: "images/products/product-3.png"
     },
     {
         id: 4,
