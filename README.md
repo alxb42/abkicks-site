@@ -58,8 +58,9 @@ All product information is stored in `products.js` for easy management and updat
 - Product IDs
 - Product names
 - SKU numbers
-- Retail and sale prices
-- Icons for visual representation
+- Sale prices
+- Icons for visual representation (used as fallback)
+- Image paths for product photos
 - Automated description generation
 
 ## Business Information
@@ -107,11 +108,29 @@ Edit `products.js` and add new product objects to the `products` array:
     name: "LEGO Product Name",
     sku: "AB-LGO-XXXXX-N",
     condition: "New/Sealed",
-    retailPrice: 99.99,
     salePrice: 149.99,
-    icon: "🎨"
+    icon: "🎨",
+    image: "images/products/product-26.jpg"
 }
 ```
+
+### Adding Product Photos
+
+Each product can have an actual photo displayed on the site:
+
+1. Take a clear photo of your LEGO® set box (recommended size: 800x800px)
+2. Save it as `product-X.jpg` where X is the product ID (e.g., `product-1.jpg`)
+3. Place the image in the `images/products/` directory
+4. The website will automatically display it!
+
+**Image Guidelines:**
+- Use `.jpg`, `.png`, or `.webp` formats
+- Recommended size: 800x800px to 1200x1200px
+- Keep file sizes under 500KB for fast loading
+- Use clear, well-lit photos with the product centered
+- If no image is found, the emoji icon will be displayed as a fallback
+
+For more details, see `images/products/README.md`.
 
 ### Updating Business Information
 

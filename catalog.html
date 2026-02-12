@@ -88,8 +88,14 @@
             productCard.href = `product.html?id=${product.id}`;
             productCard.className = 'product-card';
             
+            // Use image if available, otherwise fall back to icon
+            const imageContent = product.image 
+                ? `<img src="${product.image}" alt="${product.name}" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                   <div class="product-image-fallback" style="display:none;">${product.icon}</div>`
+                : `<div class="product-image-icon">${product.icon}</div>`;
+            
             productCard.innerHTML = `
-                <div class="product-image">${product.icon}</div>
+                <div class="product-image">${imageContent}</div>
                 <div class="product-info">
                     <h3 class="product-name">${product.name}</h3>
                     <p class="product-sku">SKU: ${product.sku}</p>

@@ -84,10 +84,16 @@
         if (product) {
             document.title = `${product.name} - AB KICKS LLC`;
             
+            // Use image if available, otherwise fall back to icon
+            const imageContent = product.image 
+                ? `<img src="${product.image}" alt="${product.name}" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                   <div class="product-detail-image-fallback" style="display:none;">${product.icon}</div>`
+                : `<div class="product-detail-image-icon">${product.icon}</div>`;
+            
             const productDetail = document.getElementById('product-detail');
             productDetail.innerHTML = `
                 <div class="product-detail-grid">
-                    <div class="product-detail-image">${product.icon}</div>
+                    <div class="product-detail-image">${imageContent}</div>
                     <div class="product-detail-info">
                         <h1>${product.name}</h1>
                         <p class="product-sku">SKU: ${product.sku}</p>
