@@ -1,0 +1,18 @@
+<svg width="800" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="800" fill="#667eea"/>
+  <text x="50%" y="40%" text-anchor="middle" font-size="48" fill="white" font-family="Arial, sans-serif" font-weight="bold">
+    LEGO 21265
+  </text>
+  <text x="50%" y="50%" text-anchor="middle" font-size="32" fill="white" font-family="Arial, sans-serif">
+    Minecraft
+  </text>
+  <text x="50%" y="60%" text-anchor="middle" font-size="32" fill="white" font-family="Arial, sans-serif">
+    The Crafting Table
+  </text>
+  <text x="50%" y="75%" text-anchor="middle" font-size="24" fill="#ffeb3b" font-family="Arial, sans-serif">
+    Sample Product Image
+  </text>
+  <text x="50%" y="82%" text-anchor="middle" font-size="18" fill="#ffeb3b" font-family="Arial, sans-serif">
+    Replace with actual photo
+  </text>
+</svg>

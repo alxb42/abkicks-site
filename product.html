@@ -73,6 +73,7 @@
     </footer>
 
     <script src="products.js"></script>
+    <script src="product-image-helper.js"></script>
     <script>
         // Get product ID from URL
         const urlParams = new URLSearchParams(window.location.search);
@@ -84,34 +85,59 @@
         if (product) {
             document.title = `${product.name} - AB KICKS LLC`;
             
-            // Use image if available, otherwise fall back to icon
-            const imageContent = product.image 
-                ? `<img src="${product.image}" alt="${product.name}" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                   <div class="product-detail-image-fallback" style="display:none;">${product.icon}</div>`
-                : `<div class="product-detail-image-icon">${product.icon}</div>`;
-            
             const productDetail = document.getElementById('product-detail');
-            productDetail.innerHTML = `
-                <div class="product-detail-grid">
-                    <div class="product-detail-image">${imageContent}</div>
-                    <div class="product-detail-info">
-                        <h1>${product.name}</h1>
-                        <p class="product-sku">SKU: ${product.sku}</p>
-                        <span class="product-condition">${product.condition}</span>
-                        <div class="product-detail-pricing">
-                            <p class="sale-price">$${product.salePrice.toFixed(2)}</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="product-description">
-                    <h2>Product Description</h2>
-                    <p>${getProductDescription(product.name)}</p>
-                    <h3>Purchase Information</h3>
-                    <p>To purchase this item, please contact us at <a href="mailto:abkicksllc@gmail.com">abkicksllc@gmail.com</a> with the SKU number (${product.sku}). We'll provide payment and shipping details.</p>
-                    <h3>About This Set</h3>
-                    <p>This is a genuine LEGO® set that has been carefully stored in a climate-controlled environment. All our sets are 100% authentic and come directly from authorized LEGO® retailers. We inspect each set before shipment to ensure the box is in excellent condition.</p>
-                </div>
+            
+            // Create detail grid container
+            const detailGrid = document.createElement('div');
+            detailGrid.className = 'product-detail-grid';
+            
+            // Create product image with helper (more secure)
+            const productImage = createProductImage(product, 'detail');
+            
+            // Create product info section
+            const productInfo = document.createElement('div');
+            productInfo.className = 'product-detail-info';
+            
+            const productName = document.createElement('h1');
+            productName.textContent = product.name;
+            
+            const productSku = document.createElement('p');
+            productSku.className = 'product-sku';
+            productSku.textContent = `SKU: ${product.sku}`;
+            
+            const productCondition = document.createElement('span');
+            productCondition.className = 'product-condition';
+            productCondition.textContent = product.condition;
+            
+            const productPricing = document.createElement('div');
+            productPricing.className = 'product-detail-pricing';
+            const salePrice = document.createElement('p');
+            salePrice.className = 'sale-price';
+            salePrice.textContent = `$${product.salePrice.toFixed(2)}`;
+            productPricing.appendChild(salePrice);
+            
+            productInfo.appendChild(productName);
+            productInfo.appendChild(productSku);
+            productInfo.appendChild(productCondition);
+            productInfo.appendChild(productPricing);
+            
+            detailGrid.appendChild(productImage);
+            detailGrid.appendChild(productInfo);
+            
+            // Create description section
+            const descriptionDiv = document.createElement('div');
+            descriptionDiv.className = 'product-description';
+            descriptionDiv.innerHTML = `
+                <h2>Product Description</h2>
+                <p>${escapeHtml(getProductDescription(product.name))}</p>
+                <h3>Purchase Information</h3>
+                <p>To purchase this item, please contact us at <a href="mailto:abkicksllc@gmail.com">abkicksllc@gmail.com</a> with the SKU number (${escapeHtml(product.sku)}). We'll provide payment and shipping details.</p>
+                <h3>About This Set</h3>
+                <p>This is a genuine LEGO® set that has been carefully stored in a climate-controlled environment. All our sets are 100% authentic and come directly from authorized LEGO® retailers. We inspect each set before shipment to ensure the box is in excellent condition.</p>
             `;
+            
+            productDetail.appendChild(detailGrid);
+            productDetail.appendChild(descriptionDiv);
         } else {
             document.getElementById('product-detail').innerHTML = `
                 <div style="text-align: center; padding: 3rem;">

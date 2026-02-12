@@ -79,6 +79,7 @@
     </footer>
 
     <script src="products.js"></script>
+    <script src="product-image-helper.js"></script>
     <script>
         // Load products into the catalog
         const productsGrid = document.getElementById('products-grid');
@@ -88,24 +89,39 @@
             productCard.href = `product.html?id=${product.id}`;
             productCard.className = 'product-card';
             
-            // Use image if available, otherwise fall back to icon
-            const imageContent = product.image 
-                ? `<img src="${product.image}" alt="${product.name}" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                   <div class="product-image-fallback" style="display:none;">${product.icon}</div>`
-                : `<div class="product-image-icon">${product.icon}</div>`;
+            // Create product info section
+            const productInfo = document.createElement('div');
+            productInfo.className = 'product-info';
             
-            productCard.innerHTML = `
-                <div class="product-image">${imageContent}</div>
-                <div class="product-info">
-                    <h3 class="product-name">${product.name}</h3>
-                    <p class="product-sku">SKU: ${product.sku}</p>
-                    <span class="product-condition">${product.condition}</span>
-                    <div class="product-pricing">
-                        <p class="sale-price">$${product.salePrice.toFixed(2)}</p>
-                    </div>
-                </div>
-            `;
+            const productName = document.createElement('h3');
+            productName.className = 'product-name';
+            productName.textContent = product.name;
             
+            const productSku = document.createElement('p');
+            productSku.className = 'product-sku';
+            productSku.textContent = `SKU: ${product.sku}`;
+            
+            const productCondition = document.createElement('span');
+            productCondition.className = 'product-condition';
+            productCondition.textContent = product.condition;
+            
+            const productPricing = document.createElement('div');
+            productPricing.className = 'product-pricing';
+            const salePrice = document.createElement('p');
+            salePrice.className = 'sale-price';
+            salePrice.textContent = `$${product.salePrice.toFixed(2)}`;
+            productPricing.appendChild(salePrice);
+            
+            productInfo.appendChild(productName);
+            productInfo.appendChild(productSku);
+            productInfo.appendChild(productCondition);
+            productInfo.appendChild(productPricing);
+            
+            // Use helper function to create image with fallback
+            const productImage = createProductImage(product, 'regular');
+            
+            productCard.appendChild(productImage);
+            productCard.appendChild(productInfo);
             productsGrid.appendChild(productCard);
         });
     </script>

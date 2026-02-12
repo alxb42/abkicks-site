@@ -6,7 +6,7 @@ const products = [
         condition: "New/Sealed",
         salePrice: 104.99,
         icon: "🧱",
-        image: "images/products/product-1.jpg"
+        image: "images/products/product-1.svg"
     },
     {
         id: 2,
@@ -15,7 +15,7 @@ const products = [
         condition: "New/Sealed",
         salePrice: 39.99,
         icon: "🎭",
-        image: "images/products/product-2.jpg"
+        image: "images/products/product-2.svg"
     },
     {
         id: 3,
