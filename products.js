@@ -6,7 +6,7 @@ const products = [
         condition: "New/Sealed",
         salePrice: 104.99,
         icon: "🧱",
-        image: "images/products/product-1.svg"
+        image: "images/products/product-1.png"
     },
     {
         id: 2,
@@ -15,7 +15,7 @@ const products = [
         condition: "New/Sealed",
         salePrice: 39.99,
         icon: "🎭",
-        image: "images/products/product-2.svg"
+        image: "images/products/product-2.png"
     },
     {
         id: 3,
@@ -33,7 +33,7 @@ const products = [
         condition: "New/Sealed",
         salePrice: 99.99,
         icon: "🌺",
-        image: "images/products/product-4.jpg"
+        image: "images/products/product-4.png"
     },
     {
         id: 5,
@@ -42,7 +42,7 @@ const products = [
         condition: "New/Sealed",
         salePrice: 89.99,
         icon: "⭐",
-        image: "images/products/product-5.jpg"
+        image: "images/products/product-5.png"
     },
     {
         id: 6,
@@ -51,7 +51,7 @@ const products = [
         condition: "New/Sealed",
         salePrice: 59.99,
         icon: "🐭",
-        image: "images/products/product-6.jpg"
+        image: "images/products/product-6.png"
     },
     {
         id: 7,
@@ -60,7 +60,7 @@ const products = [
         condition: "New/Sealed",
         salePrice: 199.99,
         icon: "✈️",
-        image: "images/products/product-7.jpg"
+        image: "images/products/product-7.png"
     },
     {
         id: 8,
@@ -69,7 +69,7 @@ const products = [
         condition: "New/Sealed",
         salePrice: 54.99,
         icon: "🐧",
-        image: "images/products/product-8.jpg"
+        image: "images/products/product-8.png"
     },
     {
         id: 9,
@@ -78,7 +78,7 @@ const products = [
         condition: "New/Sealed",
         salePrice: 139.99,
         icon: "🧳",
-        image: "images/products/product-9.jpg"
+        image: "images/products/product-9.png"
     },
     {
         id: 10,
@@ -87,7 +87,7 @@ const products = [
         condition: "New/Sealed",
         salePrice: 274.99,
         icon: "⚔️",
-        image: "images/products/product-10.jpg"
+        image: "images/products/product-10.png"
     },
     {
         id: 11,
@@ -96,7 +96,7 @@ const products = [
         condition: "New/Sealed",
         salePrice: 149.99,
         icon: "🎸",
-        image: "images/products/product-11.jpg"
+        image: "images/products/product-11.png"
     },
     {
         id: 12,
@@ -105,7 +105,7 @@ const products = [
         condition: "New/Sealed",
         salePrice: 129.99,
         icon: "🦋",
-        image: "images/products/product-12.jpg"
+        image: "images/products/product-12.png"
     },
     {
         id: 13,
@@ -114,7 +114,7 @@ const products = [
         condition: "New/Sealed",
         salePrice: 599.99,
         icon: "🏠",
-        image: "images/products/product-13.jpg"
+        image: "images/products/product-13.png"
     },
     {
         id: 14,
@@ -123,7 +123,7 @@ const products = [
         condition: "New/Sealed",
         salePrice: 169.99,
         icon: "🏡",
-        image: "images/products/product-14.jpg"
+        image: "images/products/product-14.png"
     },
     {
         id: 15,
@@ -132,7 +132,7 @@ const products = [
         condition: "New/Sealed",
         salePrice: 55.99,
         icon: "🦔",
-        image: "images/products/product-15.jpg"
+        image: "images/products/product-15.png"
     },
     {
         id: 16,
@@ -141,7 +141,7 @@ const products = [
         condition: "New/Sealed",
         salePrice: 224.99,
         icon: "🎅",
-        image: "images/products/product-16.jpg"
+        image: "images/products/product-16.png"
     },
     {
         id: 17,
@@ -150,7 +150,7 @@ const products = [
         condition: "New/Sealed",
         salePrice: 42.99,
         icon: "🐘",
-        image: "images/products/product-17.jpg"
+        image: "images/products/product-17.png"
     },
     {
         id: 18,
@@ -159,7 +159,7 @@ const products = [
         condition: "New/Sealed",
         salePrice: 799.99,
         icon: "🏰",
-        image: "images/products/product-18.jpg"
+        image: "images/products/product-18.png"
     },
     {
         id: 19,
@@ -168,7 +168,7 @@ const products = [
         condition: "New/Sealed",
         salePrice: 69.99,
         icon: "🦁",
-        image: "images/products/product-19.jpg"
+        image: "images/products/product-19.png"
     },
     {
         id: 20,
@@ -177,7 +177,7 @@ const products = [
         condition: "New/Sealed",
         salePrice: 99.99,
         icon: "🚀",
-        image: "images/products/product-20.jpg"
+        image: "images/products/product-20.png"
     },
     {
         id: 21,
@@ -186,7 +186,7 @@ const products = [
         condition: "New/Sealed",
         salePrice: 29.99,
         icon: "👨‍🚀",
-        image: "images/products/product-21.jpg"
+        image: "images/products/product-21.png"
     },
     {
         id: 22,
@@ -195,7 +195,7 @@ const products = [
         condition: "New/Sealed",
         salePrice: 59.99,
         icon: "⚔️",
-        image: "images/products/product-22.jpg"
+        image: "images/products/product-22.png"
     },
     {
         id: 23,
@@ -204,7 +204,7 @@ const products = [
         condition: "New/Sealed",
         salePrice: 129.99,
         icon: "📝",
-        image: "images/products/product-23.jpg"
+        image: "images/products/product-23.png"
     },
     {
         id: 24,
@@ -213,7 +213,7 @@ const products = [
         condition: "New/Sealed",
         salePrice: 59.99,
         icon: "🐴",
-        image: "images/products/product-24.jpg"
+        image: "images/products/product-24.png"
     },
     {
         id: 25,
@@ -222,7 +222,7 @@ const products = [
         condition: "New/Sealed",
         salePrice: 65.99,
         icon: "🚗",
-        image: "images/products/product-25.jpg"
+        image: "images/products/product-25.png"
     }
 ];
 
