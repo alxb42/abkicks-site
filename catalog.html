@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Catalog - AB KICKS LLC</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <h1>AB KICKS LLC</h1>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="catalog.html" class="active">Products</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="policies.html">Policies</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="catalog-header">
+            <div class="container">
+                <h1>Our LEGO® Product Catalog</h1>
+                <p>Browse our curated selection of factory-sealed LEGO® sets</p>
+            </div>
+        </section>
+
+        <section class="catalog-section">
+            <div class="container">
+                <div class="products-grid" id="products-grid">
+                    <!-- Products will be loaded here by JavaScript -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>AB KICKS LLC</h3>
+                    <p>Premium Sealed LEGO® Sets</p>
+                    <p>North Haven, CT</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="catalog.html">Products</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="policies.html">Policies</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Policies</h3>
+                    <ul>
+                        <li><a href="shipping-policy.html">Shipping Policy</a></li>
+                        <li><a href="returns-policy.html">Returns Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p>Email: <a href="mailto:abkicksllc@gmail.com">abkicksllc@gmail.com</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 AB KICKS LLC. All rights reserved. LEGO® is a trademark of the LEGO Group.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="products.js"></script>
+    <script>
+        // Load products into the catalog
+        const productsGrid = document.getElementById('products-grid');
+        
+        products.forEach(product => {
+            const productCard = document.createElement('a');
+            productCard.href = `product.html?id=${product.id}`;
+            productCard.className = 'product-card';
+            
+            productCard.innerHTML = `
+                <div class="product-image">${product.icon}</div>
+                <div class="product-info">
+                    <h3 class="product-name">${product.name}</h3>
+                    <p class="product-sku">SKU: ${product.sku}</p>
+                    <span class="product-condition">${product.condition}</span>
+                    <div class="product-pricing">
+                        <p class="retail-price">Retail: $${product.retailPrice.toFixed(2)}</p>
+                        <p class="sale-price">$${product.salePrice.toFixed(2)}</p>
+                    </div>
+                </div>
+            `;
+            
+            productsGrid.appendChild(productCard);
+        });
+    </script>
+</body>
+</html>
