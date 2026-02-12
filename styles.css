@@ -255,13 +255,6 @@ header {
     margin-top: 1rem;
 }
 
-.retail-price {
-    font-size: 0.9rem;
-    color: #999;
-    text-decoration: line-through;
-    margin-bottom: 0.25rem;
-}
-
 .sale-price {
     font-size: 1.5rem;
     font-weight: bold;
@@ -317,10 +310,6 @@ header {
 
 .product-detail-pricing {
     margin: 2rem 0;
-}
-
-.product-detail-pricing .retail-price {
-    font-size: 1.1rem;
 }
 
 .product-detail-pricing .sale-price {
