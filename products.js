@@ -5,7 +5,8 @@ const products = [
         sku: "AB-LGO-21265-N",
         condition: "New/Sealed",
         salePrice: 104.99,
-        icon: "🧱"
+        icon: "🧱",
+        image: "images/products/product-1.svg"
     },
     {
         id: 2,
@@ -13,7 +14,8 @@ const products = [
         sku: "AB-LGO-40799-N",
         condition: "New/Sealed",
         salePrice: 39.99,
-        icon: "🎭"
+        icon: "🎭",
+        image: "images/products/product-2.svg"
     },
     {
         id: 3,
@@ -21,7 +23,8 @@ const products = [
         sku: "AB-LGO-40800-N",
         condition: "New/Sealed",
         salePrice: 39.99,
-        icon: "🤡"
+        icon: "🤡",
+        image: "images/products/product-3.jpg"
     },
     {
         id: 4,
@@ -29,7 +32,8 @@ const products = [
         sku: "AB-LGO-43252-N",
         condition: "New/Sealed",
         salePrice: 99.99,
-        icon: "🌺"
+        icon: "🌺",
+        image: "images/products/product-4.jpg"
     },
     {
         id: 5,
@@ -37,7 +41,8 @@ const products = [
         sku: "AB-LGO-40796-N",
         condition: "New/Sealed",
         salePrice: 89.99,
-        icon: "⭐"
+        icon: "⭐",
+        image: "images/products/product-5.jpg"
     },
     {
         id: 6,
@@ -45,7 +50,8 @@ const products = [
         sku: "AB-LGO-40793-N",
         condition: "New/Sealed",
         salePrice: 59.99,
-        icon: "🐭"
+        icon: "🐭",
+        image: "images/products/product-6.jpg"
     },
     {
         id: 7,
@@ -53,7 +59,8 @@ const products = [
         sku: "AB-LGO-42656-N",
         condition: "New/Sealed",
         salePrice: 199.99,
-        icon: "✈️"
+        icon: "✈️",
+        image: "images/products/product-7.jpg"
     },
     {
         id: 8,
@@ -61,7 +68,8 @@ const products = [
         sku: "AB-LGO-40886-N",
         condition: "New/Sealed",
         salePrice: 54.99,
-        icon: "🐧"
+        icon: "🐧",
+        image: "images/products/product-8.jpg"
     },
     {
         id: 9,
@@ -69,7 +77,8 @@ const products = [
         sku: "AB-LGO-41838-N",
         condition: "New/Sealed",
         salePrice: 139.99,
-        icon: "🧳"
+        icon: "🧳",
+        image: "images/products/product-9.jpg"
     },
     {
         id: 10,
@@ -77,7 +86,8 @@ const products = [
         sku: "AB-LGO-21343-N",
         condition: "New/Sealed",
         salePrice: 274.99,
-        icon: "⚔️"
+        icon: "⚔️",
+        image: "images/products/product-10.jpg"
     },
     {
         id: 11,
@@ -85,7 +95,8 @@ const products = [
         sku: "AB-LGO-77072-N",
         condition: "New/Sealed",
         salePrice: 149.99,
-        icon: "🎸"
+        icon: "🎸",
+        image: "images/products/product-11.jpg"
     },
     {
         id: 12,
@@ -93,7 +104,8 @@ const products = [
         sku: "AB-LGO-21342-N",
         condition: "New/Sealed",
         salePrice: 129.99,
-        icon: "🦋"
+        icon: "🦋",
+        image: "images/products/product-12.jpg"
     },
     {
         id: 13,
@@ -101,7 +113,8 @@ const products = [
         sku: "AB-LGO-21335-N",
         condition: "New/Sealed",
         salePrice: 599.99,
-        icon: "🏠"
+        icon: "🏠",
+        image: "images/products/product-13.jpg"
     },
     {
         id: 14,
@@ -109,7 +122,8 @@ const products = [
         sku: "AB-LGO-77052-N",
         condition: "New/Sealed",
         salePrice: 169.99,
-        icon: "🏡"
+        icon: "🏡",
+        image: "images/products/product-14.jpg"
     },
     {
         id: 15,
@@ -117,7 +131,8 @@ const products = [
         sku: "AB-LGO-40781-N",
         condition: "New/Sealed",
         salePrice: 55.99,
-        icon: "🦔"
+        icon: "🦔",
+        image: "images/products/product-15.jpg"
     },
     {
         id: 16,
@@ -125,7 +140,8 @@ const products = [
         sku: "AB-LGO-10339-N",
         condition: "New/Sealed",
         salePrice: 224.99,
-        icon: "🎅"
+        icon: "🎅",
+        image: "images/products/product-16.jpg"
     },
     {
         id: 17,
@@ -133,7 +149,8 @@ const products = [
         sku: "AB-LGO-40792-N",
         condition: "New/Sealed",
         salePrice: 42.99,
-        icon: "🐘"
+        icon: "🐘",
+        image: "images/products/product-17.jpg"
     },
     {
         id: 18,
@@ -141,7 +158,8 @@ const products = [
         sku: "AB-LGO-10305-N",
         condition: "New/Sealed",
         salePrice: 799.99,
-        icon: "🏰"
+        icon: "🏰",
+        image: "images/products/product-18.jpg"
     },
     {
         id: 19,
@@ -149,7 +167,8 @@ const products = [
         sku: "AB-LGO-40915-N",
         condition: "New/Sealed",
         salePrice: 69.99,
-        icon: "🦁"
+        icon: "🦁",
+        image: "images/products/product-19.jpg"
     },
     {
         id: 20,
@@ -157,7 +176,8 @@ const products = [
         sku: "AB-LGO-40755-N",
         condition: "New/Sealed",
         salePrice: 99.99,
-        icon: "🚀"
+        icon: "🚀",
+        image: "images/products/product-20.jpg"
     },
     {
         id: 21,
@@ -165,7 +185,8 @@ const products = [
         sku: "AB-LGO-40675-N",
         condition: "New/Sealed",
         salePrice: 29.99,
-        icon: "👨‍🚀"
+        icon: "👨‍🚀",
+        image: "images/products/product-21.jpg"
     },
     {
         id: 22,
@@ -173,7 +194,8 @@ const products = [
         sku: "AB-LGO-40547-N",
         condition: "New/Sealed",
         salePrice: 59.99,
-        icon: "⚔️"
+        icon: "⚔️",
+        image: "images/products/product-22.jpg"
     },
     {
         id: 23,
@@ -181,7 +203,8 @@ const products = [
         sku: "AB-LGO-41839-N",
         condition: "New/Sealed",
         salePrice: 129.99,
-        icon: "📝"
+        icon: "📝",
+        image: "images/products/product-23.jpg"
     },
     {
         id: 24,
@@ -189,7 +212,8 @@ const products = [
         sku: "AB-LGO-40779-N",
         condition: "New/Sealed",
         salePrice: 59.99,
-        icon: "🐴"
+        icon: "🐴",
+        image: "images/products/product-24.jpg"
     },
     {
         id: 25,
@@ -197,7 +221,8 @@ const products = [
         sku: "AB-LGO-40913-N",
         condition: "New/Sealed",
         salePrice: 65.99,
-        icon: "🚗"
+        icon: "🚗",
+        image: "images/products/product-25.jpg"
     }
 ];
 
