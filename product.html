@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details - AB KICKS LLC</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <h1>AB KICKS LLC</h1>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="catalog.html" class="active">Products</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="policies.html">Policies</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="product-detail">
+            <div class="container">
+                <a href="catalog.html" class="back-link">← Back to Catalog</a>
+                <div class="product-detail-container" id="product-detail">
+                    <!-- Product details will be loaded here by JavaScript -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>AB KICKS LLC</h3>
+                    <p>Premium Sealed LEGO® Sets</p>
+                    <p>North Haven, CT</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="catalog.html">Products</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="policies.html">Policies</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Policies</h3>
+                    <ul>
+                        <li><a href="shipping-policy.html">Shipping Policy</a></li>
+                        <li><a href="returns-policy.html">Returns Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p>Email: <a href="mailto:abkicksllc@gmail.com">abkicksllc@gmail.com</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 AB KICKS LLC. All rights reserved. LEGO® is a trademark of the LEGO Group.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="products.js"></script>
+    <script>
+        // Get product ID from URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const productId = parseInt(urlParams.get('id'));
+        
+        // Find the product
+        const product = products.find(p => p.id === productId);
+        
+        if (product) {
+            document.title = `${product.name} - AB KICKS LLC`;
+            
+            const productDetail = document.getElementById('product-detail');
+            productDetail.innerHTML = `
+                <div class="product-detail-grid">
+                    <div class="product-detail-image">${product.icon}</div>
+                    <div class="product-detail-info">
+                        <h1>${product.name}</h1>
+                        <p class="product-sku">SKU: ${product.sku}</p>
+                        <span class="product-condition">${product.condition}</span>
+                        <div class="product-detail-pricing">
+                            <p class="retail-price">Original Retail: $${product.retailPrice.toFixed(2)}</p>
+                            <p class="sale-price">$${product.salePrice.toFixed(2)}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-description">
+                    <h2>Product Description</h2>
+                    <p>${getProductDescription(product.name)}</p>
+                    <h3>Purchase Information</h3>
+                    <p>To purchase this item, please contact us at <a href="mailto:abkicksllc@gmail.com">abkicksllc@gmail.com</a> with the SKU number (${product.sku}). We'll provide payment and shipping details.</p>
+                    <h3>About This Set</h3>
+                    <p>This is a genuine LEGO® set that has been carefully stored in a climate-controlled environment. All our sets are 100% authentic and come directly from authorized LEGO® retailers. We inspect each set before shipment to ensure the box is in excellent condition.</p>
+                </div>
+            `;
+        } else {
+            document.getElementById('product-detail').innerHTML = `
+                <div style="text-align: center; padding: 3rem;">
+                    <h2>Product Not Found</h2>
+                    <p>Sorry, we couldn't find the product you're looking for.</p>
+                    <a href="catalog.html" class="cta-button">Return to Catalog</a>
+                </div>
+            `;
+        }
+    </script>
+</body>
+</html>

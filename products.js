@@ -1,0 +1,232 @@
+const products = [
+    {
+        id: 1,
+        name: "LEGO 21265 Minecraft The Crafting Table",
+        sku: "AB-LGO-21265-N",
+        condition: "New/Sealed",
+        retailPrice: 34.99,
+        salePrice: 104.99,
+        icon: "🧱"
+    },
+    {
+        id: 2,
+        name: "LEGO 40799 Monkey D. Luffy Figure",
+        sku: "AB-LGO-40799-N",
+        condition: "New/Sealed",
+        retailPrice: 9.99,
+        salePrice: 39.99,
+        icon: "🎭"
+    },
+    {
+        id: 3,
+        name: "LEGO 40800 Buggy the Clown Figure",
+        sku: "AB-LGO-40800-N",
+        condition: "New/Sealed",
+        retailPrice: 9.99,
+        salePrice: 39.99,
+        icon: "🤡"
+    },
+    {
+        id: 4,
+        name: "LEGO 43252 Disney Moana's Flowerpot",
+        sku: "AB-LGO-43252-N",
+        condition: "New/Sealed",
+        retailPrice: 44.99,
+        salePrice: 99.99,
+        icon: "🌺"
+    },
+    {
+        id: 5,
+        name: "LEGO 40796 BrickHeadz Star Wars Revenge of the Sith Heroes & Villains",
+        sku: "AB-LGO-40796-N",
+        condition: "New/Sealed",
+        retailPrice: 19.99,
+        salePrice: 89.99,
+        icon: "⭐"
+    },
+    {
+        id: 6,
+        name: "LEGO 40793 BrickHeadz Tom & Jerry",
+        sku: "AB-LGO-40793-N",
+        condition: "New/Sealed",
+        retailPrice: 19.99,
+        salePrice: 59.99,
+        icon: "🐭"
+    },
+    {
+        id: 7,
+        name: "LEGO 42656 Heartlake City Airport and Airplane",
+        sku: "AB-LGO-42656-N",
+        condition: "New/Sealed",
+        retailPrice: 99.99,
+        salePrice: 199.99,
+        icon: "✈️"
+    },
+    {
+        id: 8,
+        name: "LEGO 40886 Valentine's Day Penguins in Love",
+        sku: "AB-LGO-40886-N",
+        condition: "New/Sealed",
+        retailPrice: 14.99,
+        salePrice: 54.99,
+        icon: "🐧"
+    },
+    {
+        id: 9,
+        name: "LEGO 41838 Travel Moments",
+        sku: "AB-LGO-41838-N",
+        condition: "New/Sealed",
+        retailPrice: 19.99,
+        salePrice: 139.99,
+        icon: "🧳"
+    },
+    {
+        id: 10,
+        name: "LEGO 21343 Viking Village (LEGO Ideas)",
+        sku: "AB-LGO-21343-N",
+        condition: "New/Sealed",
+        retailPrice: 129.99,
+        salePrice: 274.99,
+        icon: "⚔️"
+    },
+    {
+        id: 11,
+        name: "LEGO 77072 Animal Crossing K.K.'s Concert Plaza",
+        sku: "AB-LGO-77072-N",
+        condition: "New/Sealed",
+        retailPrice: 79.99,
+        salePrice: 149.99,
+        icon: "🎸"
+    },
+    {
+        id: 12,
+        name: "LEGO 21342 The Insect Collection (LEGO Ideas)",
+        sku: "AB-LGO-21342-N",
+        condition: "New/Sealed",
+        retailPrice: 79.99,
+        salePrice: 129.99,
+        icon: "🦋"
+    },
+    {
+        id: 13,
+        name: "LEGO 21335 Motorized Lighthouse",
+        sku: "AB-LGO-21335-N",
+        condition: "New/Sealed",
+        retailPrice: 299.99,
+        salePrice: 599.99,
+        icon: "🏠"
+    },
+    {
+        id: 14,
+        name: "LEGO 77052 Animal Crossing Nook's Cranny & Rosie's House",
+        sku: "AB-LGO-77052-N",
+        condition: "New/Sealed",
+        retailPrice: 74.99,
+        salePrice: 169.99,
+        icon: "🏡"
+    },
+    {
+        id: 15,
+        name: "LEGO 40781 Sonic the Hedgehog Badnik Crabmeat",
+        sku: "AB-LGO-40781-N",
+        condition: "New/Sealed",
+        retailPrice: 14.99,
+        salePrice: 55.99,
+        icon: "🦔"
+    },
+    {
+        id: 16,
+        name: "LEGO 10339 Icons Santa's Post Office",
+        sku: "AB-LGO-10339-N",
+        condition: "New/Sealed",
+        retailPrice: 99.99,
+        salePrice: 224.99,
+        icon: "🎅"
+    },
+    {
+        id: 17,
+        name: "LEGO 40792 BrickHeadz Disney Dumbo",
+        sku: "AB-LGO-40792-N",
+        condition: "New/Sealed",
+        retailPrice: 19.99,
+        salePrice: 42.99,
+        icon: "🐘"
+    },
+    {
+        id: 18,
+        name: "LEGO 10305 Lion Knights' Castle",
+        sku: "AB-LGO-10305-N",
+        condition: "New/Sealed",
+        retailPrice: 399.99,
+        salePrice: 799.99,
+        icon: "🏰"
+    },
+    {
+        id: 19,
+        name: "LEGO 40915 Chinese Traditional Festivals Lion Dance",
+        sku: "AB-LGO-40915-N",
+        condition: "New/Sealed",
+        retailPrice: 39.99,
+        salePrice: 69.99,
+        icon: "🦁"
+    },
+    {
+        id: 20,
+        name: "LEGO 40755 Star Wars Imperial Dropship vs. Rebel Scout Speeder",
+        sku: "AB-LGO-40755-N",
+        condition: "New/Sealed",
+        retailPrice: 39.99,
+        salePrice: 99.99,
+        icon: "🚀"
+    },
+    {
+        id: 21,
+        name: "LEGO 40675 BrickHeadz Star Wars Clone Commander Cody",
+        sku: "AB-LGO-40675-N",
+        condition: "New/Sealed",
+        retailPrice: 9.99,
+        salePrice: 29.99,
+        icon: "👨‍🚀"
+    },
+    {
+        id: 22,
+        name: "LEGO 40547 Obi-Wan Kenobi & Darth Vader BrickHeadz",
+        sku: "AB-LGO-40547-N",
+        condition: "New/Sealed",
+        retailPrice: 19.99,
+        salePrice: 59.99,
+        icon: "⚔️"
+    },
+    {
+        id: 23,
+        name: "LEGO 41839 Message Board",
+        sku: "AB-LGO-41839-N",
+        condition: "New/Sealed",
+        retailPrice: 29.99,
+        salePrice: 129.99,
+        icon: "📝"
+    },
+    {
+        id: 24,
+        name: "LEGO 40779 Year of the Horse",
+        sku: "AB-LGO-40779-N",
+        condition: "New/Sealed",
+        retailPrice: 19.99,
+        salePrice: 59.99,
+        icon: "🐴"
+    },
+    {
+        id: 25,
+        name: "LEGO 40913 Vintage Parade Car",
+        sku: "AB-LGO-40913-N",
+        condition: "New/Sealed",
+        retailPrice: 39.99,
+        salePrice: 65.99,
+        icon: "🚗"
+    }
+];
+
+// Function to get product description
+function getProductDescription(productName) {
+    return `Factory-sealed LEGO® set "${productName}." Display-friendly build that's popular with adult fans. Ships securely packaged to help protect sealed box condition.`;
+}

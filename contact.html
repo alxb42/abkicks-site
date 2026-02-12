@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - AB KICKS LLC</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <h1>AB KICKS LLC</h1>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="catalog.html">Products</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                    <li><a href="policies.html">Policies</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Contact Us</h1>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h2>Get In Touch</h2>
+                        <p>
+                            Have questions about our LEGO® sets? Interested in purchasing? 
+                            We'd love to hear from you!
+                        </p>
+                        
+                        <h3 style="margin-top: 2rem;">Contact Information</h3>
+                        <p><strong>Email:</strong><br>
+                        <a href="mailto:abkicksllc@gmail.com">abkicksllc@gmail.com</a></p>
+                        
+                        <p><strong>Location:</strong><br>
+                        North Haven, CT<br>
+                        United States</p>
+                        
+                        <p><strong>Business Hours:</strong><br>
+                        Monday - Friday: 9:00 AM - 6:00 PM EST<br>
+                        Saturday: 10:00 AM - 4:00 PM EST<br>
+                        Sunday: Closed</p>
+
+                        <h3 style="margin-top: 2rem;">How to Purchase</h3>
+                        <p>
+                            To purchase any of our LEGO® sets, please email us with:
+                        </p>
+                        <ul>
+                            <li>The SKU number of the item(s) you're interested in</li>
+                            <li>Your shipping address</li>
+                            <li>Any questions you may have</li>
+                        </ul>
+                        <p>
+                            We'll respond with payment options and shipping details within 24 hours.
+                        </p>
+                    </div>
+
+                    <div class="contact-form">
+                        <h2>Send Us a Message</h2>
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <label for="name">Name *</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject *</label>
+                                <input type="text" id="subject" name="subject" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message *</label>
+                                <textarea id="message" name="message" required></textarea>
+                            </div>
+                            <button type="submit" class="submit-button">Send Message</button>
+                        </form>
+                        <div id="formMessage" style="margin-top: 1rem; display: none;"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>AB KICKS LLC</h3>
+                    <p>Premium Sealed LEGO® Sets</p>
+                    <p>North Haven, CT</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="catalog.html">Products</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="policies.html">Policies</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Policies</h3>
+                    <ul>
+                        <li><a href="shipping-policy.html">Shipping Policy</a></li>
+                        <li><a href="returns-policy.html">Returns Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p>Email: <a href="mailto:abkicksllc@gmail.com">abkicksllc@gmail.com</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 AB KICKS LLC. All rights reserved. LEGO® is a trademark of the LEGO Group.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const formMessage = document.getElementById('formMessage');
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const subject = document.getElementById('subject').value;
+            const message = document.getElementById('message').value;
+            
+            // Create mailto link
+            const mailtoLink = `mailto:abkicksllc@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`)}`;
+            
+            // Open default email client
+            window.location.href = mailtoLink;
+            
+            // Show success message
+            formMessage.style.display = 'block';
+            formMessage.style.color = '#4CAF50';
+            formMessage.textContent = 'Opening your email client... If nothing happens, please email us directly at abkicksllc@gmail.com';
+            
+            // Reset form
+            this.reset();
+        });
+    </script>
+</body>
+</html>
