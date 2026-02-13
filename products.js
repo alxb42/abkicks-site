@@ -4,7 +4,7 @@ const products = [
         name: "LEGO 21265 Minecraft The Crafting Table",
         sku: "AB-LGO-21265-N",
         condition: "New/Sealed",
-        salePrice: 104.99,
+        salePrice: 89.99,
         icon: "🧱",
         image: "images/products/product-1.png"
     },
@@ -13,7 +13,7 @@ const products = [
         name: "LEGO 40799 Monkey D. Luffy Figure",
         sku: "AB-LGO-40799-N",
         condition: "New/Sealed",
-        salePrice: 39.99,
+        salePrice: 29.99,
         icon: "🎭",
         image: "images/products/product-2.png"
     },
@@ -22,7 +22,7 @@ const products = [
         name: "LEGO 40800 Buggy the Clown Figure",
         sku: "AB-LGO-40800-N",
         condition: "New/Sealed",
-        salePrice: 39.99,
+        salePrice: 24.99,
         icon: "🤡",
         image: "images/products/product-3.png"
     },
@@ -31,7 +31,7 @@ const products = [
         name: "LEGO 43252 Disney Moana's Flowerpot",
         sku: "AB-LGO-43252-N",
         condition: "New/Sealed",
-        salePrice: 99.99,
+        salePrice: 79.99,
         icon: "🌺",
         image: "images/products/product-4.png"
     },
@@ -40,7 +40,7 @@ const products = [
         name: "LEGO 40796 BrickHeadz Star Wars Revenge of the Sith Heroes & Villains",
         sku: "AB-LGO-40796-N",
         condition: "New/Sealed",
-        salePrice: 89.99,
+        salePrice: 79.99,
         icon: "⭐",
         image: "images/products/product-5.png"
     },
@@ -49,7 +49,7 @@ const products = [
         name: "LEGO 40793 BrickHeadz Tom & Jerry",
         sku: "AB-LGO-40793-N",
         condition: "New/Sealed",
-        salePrice: 59.99,
+        salePrice: 29.99,
         icon: "🐭",
         image: "images/products/product-6.png"
     },
@@ -67,7 +67,7 @@ const products = [
         name: "LEGO 40886 Valentine's Day Penguins in Love",
         sku: "AB-LGO-40886-N",
         condition: "New/Sealed",
-        salePrice: 54.99,
+        salePrice: 39.99,
         icon: "🐧",
         image: "images/products/product-8.png"
     },
@@ -76,7 +76,7 @@ const products = [
         name: "LEGO 41838 Travel Moments",
         sku: "AB-LGO-41838-N",
         condition: "New/Sealed",
-        salePrice: 139.99,
+        salePrice: 129.99,
         icon: "🧳",
         image: "images/products/product-9.png"
     },
@@ -85,16 +85,16 @@ const products = [
         name: "LEGO 21343 Viking Village (LEGO Ideas)",
         sku: "AB-LGO-21343-N",
         condition: "New/Sealed",
-        salePrice: 274.99,
+        salePrice: 199.99,
         icon: "⚔️",
         image: "images/products/product-10.png"
     },
     {
         id: 11,
-        name: "LEGO 77072 Animal Crossing K.K.'s Concert Plaza",
+        name: "LEGO 77072 Fortnite Peely Bone",
         sku: "AB-LGO-77072-N",
         condition: "New/Sealed",
-        salePrice: 149.99,
+        salePrice: 109.99,
         icon: "🎸",
         image: "images/products/product-11.png"
     },
@@ -103,7 +103,7 @@ const products = [
         name: "LEGO 21342 The Insect Collection (LEGO Ideas)",
         sku: "AB-LGO-21342-N",
         condition: "New/Sealed",
-        salePrice: 129.99,
+        salePrice: 109.99,
         icon: "🦋",
         image: "images/products/product-12.png"
     },
@@ -112,7 +112,7 @@ const products = [
         name: "LEGO 21335 Motorized Lighthouse",
         sku: "AB-LGO-21335-N",
         condition: "New/Sealed",
-        salePrice: 599.99,
+        salePrice: 424.99,
         icon: "🏠",
         image: "images/products/product-13.png"
     },
@@ -121,7 +121,7 @@ const products = [
         name: "LEGO 77052 Animal Crossing Nook's Cranny & Rosie's House",
         sku: "AB-LGO-77052-N",
         condition: "New/Sealed",
-        salePrice: 169.99,
+        salePrice: 69.99,
         icon: "🏡",
         image: "images/products/product-14.png"
     },
@@ -130,7 +130,7 @@ const products = [
         name: "LEGO 40781 Sonic the Hedgehog Badnik Crabmeat",
         sku: "AB-LGO-40781-N",
         condition: "New/Sealed",
-        salePrice: 55.99,
+        salePrice: 42.99,
         icon: "🦔",
         image: "images/products/product-15.png"
     },
@@ -139,7 +139,7 @@ const products = [
         name: "LEGO 10339 Icons Santa's Post Office",
         sku: "AB-LGO-10339-N",
         condition: "New/Sealed",
-        salePrice: 224.99,
+        salePrice: 134.99,
         icon: "🎅",
         image: "images/products/product-16.png"
     },
@@ -148,7 +148,7 @@ const products = [
         name: "LEGO 40792 BrickHeadz Disney Dumbo",
         sku: "AB-LGO-40792-N",
         condition: "New/Sealed",
-        salePrice: 42.99,
+        salePrice: 29.99,
         icon: "🐘",
         image: "images/products/product-17.png"
     },
@@ -157,7 +157,7 @@ const products = [
         name: "LEGO 10305 Lion Knights' Castle",
         sku: "AB-LGO-10305-N",
         condition: "New/Sealed",
-        salePrice: 799.99,
+        salePrice: 649.99,
         icon: "🏰",
         image: "images/products/product-18.png"
     },
@@ -166,7 +166,7 @@ const products = [
         name: "LEGO 40915 Chinese Traditional Festivals Lion Dance",
         sku: "AB-LGO-40915-N",
         condition: "New/Sealed",
-        salePrice: 69.99,
+        salePrice: 59.99,
         icon: "🦁",
         image: "images/products/product-19.png"
     },
@@ -175,7 +175,7 @@ const products = [
         name: "LEGO 40755 Star Wars Imperial Dropship vs. Rebel Scout Speeder",
         sku: "AB-LGO-40755-N",
         condition: "New/Sealed",
-        salePrice: 99.99,
+        salePrice: 89.99,
         icon: "🚀",
         image: "images/products/product-20.png"
     },
@@ -184,7 +184,7 @@ const products = [
         name: "LEGO 40675 BrickHeadz Star Wars Clone Commander Cody",
         sku: "AB-LGO-40675-N",
         condition: "New/Sealed",
-        salePrice: 29.99,
+        salePrice: 22.99,
         icon: "👨‍🚀",
         image: "images/products/product-21.png"
     },
@@ -193,7 +193,7 @@ const products = [
         name: "LEGO 40547 Obi-Wan Kenobi & Darth Vader BrickHeadz",
         sku: "AB-LGO-40547-N",
         condition: "New/Sealed",
-        salePrice: 59.99,
+        salePrice: 54.99,
         icon: "⚔️",
         image: "images/products/product-22.png"
     },
@@ -211,7 +211,7 @@ const products = [
         name: "LEGO 40779 Year of the Horse",
         sku: "AB-LGO-40779-N",
         condition: "New/Sealed",
-        salePrice: 59.99,
+        salePrice: 29.99,
         icon: "🐴",
         image: "images/products/product-24.png"
     },
@@ -220,7 +220,7 @@ const products = [
         name: "LEGO 40913 Vintage Parade Car",
         sku: "AB-LGO-40913-N",
         condition: "New/Sealed",
-        salePrice: 65.99,
+        salePrice: 35.99,
         icon: "🚗",
         image: "images/products/product-25.png"
     }
